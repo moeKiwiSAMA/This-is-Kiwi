@@ -1,0 +1,113 @@
+---
+layout: post
+title: "etcd 学习笔记(一) 又一次新的开始"
+date: 2018-12-24 10:30:00 +0800
+categories: technology
+tags: golang etcd key-value
+img: "https://i.loli.net/2018/12/24/5c2059a0efc39.png"
+---
+
+## 它是个什么?
+
+[etcd](https://github.com/etcd-io/etcd)是一个分布式高可用的键-值(key-value)存储系统,它侧重于:
+
+ - 简单: 定义明确,面向于用户的API
+ - 安全: 自动的TLS和可选的客户端证书验证
+ - 快速: 每秒10,000次写入的跑分测试
+ - 可靠: 正确得使用Raft算法做到分布式
+
+[etcd](https://github.com/etcd-io/etcd)使用Go编写,并使用[Raft](https://raft.github.io/)算法高可用地管理日志.
+
+## 那我怎么安装它呢?
+
+### 下载
+
+在[etcd](https://github.com/etcd-io/etcd)的[release](https://github.com/etcd-io/etcd/releases)里,就能找到它在所有主流平台对应的版本.
+
+需要做的是找到对应的平台下载对应的版本.
+
+最普遍的一个例子,在64位的linux上需要下载的就是[**etcd-v3.3.10-linux-amd64.tar.gz**](https://github.com/etcd-io/etcd/releases/download/v3.3.10/etcd-v3.3.10-linux-amd64.tar.gz)(文章编写于2018/12/24)
+
+### 安装
+
+将它解压
+
+
+```bash
+tar -zxvf etcd-v3.3.10-linux-amd64.tar.gz
+```
+
+我把它解压在了```/home/nyan/etcd-v3.3.10-linux-amd64/```这个目录下,按照实际情况修改目录,如果看不懂这里的东西,最好能去温习一下使用linux的基础
+
+接着把```etcd```与```etcdctl```通过软链写入/usr/bin
+
+```bash
+ln -s /home/nyan/etcd-v3.3.10-linux-amd64/etcd /usr/bin
+ln -s /home/nyan/etcd-v3.3.10-linux-amd64/etcdctl /usr/bin
+```
+
+然后就可以使用```etcd```指令启动它了
+
+当然,你也可以使用系统自带的包管理器来安装它
+
+### 配置
+
+``` etcdctl ``` 要求通过一个环境变量 ``` ETCDCTL_API=3 ``` 来使用最新版的API  
+
+
+你可以通过export来设置它
+
+```bash
+export ETCDCTL_API=3
+```
+
+也可以把它写进你的shell里
+
+如果是bash,那么
+
+```bash
+echo 'export ETCDCTL_API=3' >> ~/.bashrc
+```
+
+如果跟我一样是zsh,那么
+
+```bash
+echo 'export ETCDCTL_API=3' >> ~/.zshrc
+```
+
+其他的shell也应该有对应的方法
+
+## 怎么操作它呢?
+
+ 建议让[etcd](https://github.com/etcd-io/etcd)在[screen](https://www.gnu.org/software/screen/)或者[tmux](https://github.com/tmux/tmux)中运行,然后使用```etcdctl```来操作它
+
+### 增
+
+我们想要存一个```"name"``` 的key和一个"moeKiwiSAMA"的value,要具体怎么实现呢?
+
+```bash
+etcdctl put "name" "moeKiwiSAMA"
+```
+### 删
+
+删除```"name”```这个key
+
+```bash
+etcdctl del "name"
+```
+
+### 改
+
+覆盖掉```"name"```的value就可以了
+
+```bash
+etcdctl put "name" "newMoeKiwiSAMA"
+```
+
+### 查
+
+使用get来获取```"name"```这个key对应的value
+
+```bash
+etcdctl get "name"
+```

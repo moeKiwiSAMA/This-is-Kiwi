@@ -1,0 +1,59 @@
+title:  # Meng title
+  switch: true # Meng title switch
+  visible: "> < 被发现啦~" # State is visible text
+  hidden:  "|< 藏起来惹~" # State is hidden text
+  with_default_title: true # with default title
+  reset_time: 1000 # If state is visible , reset default title times(ms)
+
+cursor: # Meng cursor
+  switch: false # Meng cursor switch
+  auto_url: "https://ooo.0o0.ooo/2017/06/12/593ea1901c930.png" # State is auto style
+  pointer_url: "https://ooo.0o0.ooo/2017/06/12/593ea3612fd77.png" # State is pointer style
+
+console: # Meng console info
+  switch: true # Meng console info switch
+  theme_info: true # output theme info
+  text: "Blog Conent 💗 by 🥝" # text
+  color: "#fff" # text color
+  background: "#448aff" # background color
+
+header: 
+  switch: true
+
+background: # Meng background
+  switch: true
+  background_img: "https://i.loli.net/2019/08/16/T1tNn4x2Oa6I5YF.png"
+  transparent_header: true
+  transparent_footer: false
+  text_color: '#000'
+
+card: # Meng card
+  switch: true
+  background_color: 'rgba(255, 255, 255, 0.5)'
+  card_img_opacity: '0.8'
+
+live2d: # live2d ,see https://github.com/EYHN/hexo-helper-live2d
+  switch: false
+  model: "/assets/live2d/koharu/koharu.model.json" # model.json path
+  drag: true # is drag ?
+  width: 130 # canvas width
+  height: 190 # canvas height
+  bottom: 100 # canvas bottom
+  leftOrRight: "right" # left or right
+  offset: 10 # offset
+
+music_player:
+  player: "" #cplayer or aplayer
+  button_color: ""
+  music:
+    title: ''
+    author: ''
+    url: ''
+    pic: ''
+
+head_card:
+  switch: true
+  left_img: "https://i.loli.net/2019/01/19/5c42f08cb37e0.png"
+  left_text: ""
+  right_img: "https://i.loli.net/2019/01/19/5c42f10e7b205.png"
+  offset_level: 2

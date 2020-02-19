@@ -1,0 +1,25 @@
+{
+  "name": "Kiwi's House",
+  "short_name": "moeKiwiSAMA",
+  "icons": [{
+        "src": "https://i.jpg.dog/img/0c838d49ecb2a817ca9f197a1e6c8bf9.png",
+        "sizes": "128x128",
+        "type": "image/png"
+      }, {
+        "src": "https://i.jpg.dog/img/379dc2dfbce858b44cc8a5bc021ae662.png",
+        "sizes": "152x152",
+        "type": "image/png"
+      }, {
+        "src": "https://i.jpg.dog/img/14497ea1ede5a7ae357c915ff8893694.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      }, {
+        "src": "https://i.jpg.dog/img/06e4c2787799c1aab6965135f9025a50.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }],
+  "start_url": "/index.html?homescreen=1",
+  "display": "standalone",
+  "background_color": "#fdfdfd",
+  "theme_color": "#2a7ae2"
+}
