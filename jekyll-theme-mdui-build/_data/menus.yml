@@ -7,10 +7,6 @@
 - name: TAGS
   url: /pages/tags.html
   icon: "&#xe893;"
-- name: LOVER
-  url: /love/
-  icon: "&#xe87d;"
-  color: "red"
 - name: FRIENDS
   url: /pages/friends.html
   icon: "&#xe8a3;"
