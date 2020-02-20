@@ -43,6 +43,11 @@ img: https://static.kiwi.cat/images/animals.jpg
 - RGB、CYMK
 - 映射关系
 
+器材
+
+- 三脚架
+- 滤镜
+
 ## 神仙问题
 
 手机摄影
