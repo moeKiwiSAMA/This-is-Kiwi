@@ -16,7 +16,7 @@ img: https://static.kiwi.cat/images/animals.jpg
 
 光
 
-- 快门、光圈、ISO
+- [曝光：光圈值、快门与ISO](https://nyan.kiwi.cat/technology/2020/02/20/let-there-be-light.html)
 - 曝光补偿、测光
 
 模式
