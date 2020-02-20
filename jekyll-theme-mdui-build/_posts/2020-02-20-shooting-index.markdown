@@ -20,10 +20,7 @@ img: https://static.kiwi.cat/images/animals.jpg
 - 曝光补偿、测光
 
 模式
-- S档
-- M档
-- A档
-- Auto
+- [S档 M档 A档 Auto](https://nyan.kiwi.cat/technology/2020/02/20/Mode.html)
 
 对焦
 
