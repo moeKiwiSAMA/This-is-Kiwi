@@ -32,7 +32,7 @@ img: https://static.kiwi.cat/images/animals.jpg
 
 但是，由于调整这三个参数中的任意一个值都会引发一些副作用，所以，当我们希望提升照片的曝光时，并`不应该单一地调整`其中任意因素。
 
-### 光圈
+## 光圈
 
 光圈值越大，进光量越大，曝光越强。
 
@@ -59,7 +59,7 @@ img: https://static.kiwi.cat/images/animals.jpg
 | ------ | ------------ | ---- | -------- |
 | 大     | 小           | 浅   | 强烈     |
 
-### 快门速度
+## 快门速度
 
 快门速度决定曝光时间，也就是传感器或胶片接触到光源的时间，以`秒`作为单位，通常我们见到的1/60，1/3000基本都是指曝光的时间。
 
@@ -80,4 +80,26 @@ img: https://static.kiwi.cat/images/animals.jpg
 左：1/5000，右1/60  
 很明显地可以看到，右侧图片出现了拖影。
 
-### ISO
+## ISO
+
+ISO表示感光度，代表了胶卷或传感器对光的敏感程度。一般我们所说的ISO100、ISO3200就表示感光度，在相同的快门速度与光圈大小之下，感光度`越高`，照片曝光`越强`。
+
+<div style="margin:auto 0;text-align:center">
+<img style="display: inline-block;width:40%" src="https://static.kiwi.cat/images/HIGH-ISO.jpg" alt="ISO 800">
+<img style="display: inline-block;width:40%" src="https://static.kiwi.cat/images/LOW-ISO.jpg" alt="ISO 200">
+</div>
+
+左侧的照片是在ISO 800下拍摄<!--截图-->的，右侧的照片则为ISO 500。
+
+`提升`ISO对整体曝光的`提升`是明显且直观的，不过，过高的ISO也会引发一些副作用——噪点明显增加。
+
+
+
+<div style="margin:auto 0;text-align:center">
+<img style="display: inline-block;width:40%" src="https://static.kiwi.cat/images/HIGH-ISO.jpg" alt="ISO 800">
+<img style="display: inline-block;width:40%" src="https://static.kiwi.cat/images/BLOWUP-ISO.jpg" alt="ISO 32800">
+</div>
+
+左侧的照片是在ISO 800下拍摄<!--截图-->的，右侧的照片则为ISO 1280000，为了使右侧图片的曝光基本与左侧相同，拍摄时降低了一些快门速度，在右侧图片中能看到`明显的噪点`。
+
+## 如何平衡这三个参数
