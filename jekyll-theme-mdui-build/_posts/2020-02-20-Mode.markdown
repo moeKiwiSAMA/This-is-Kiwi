@@ -4,7 +4,7 @@ title: "照相的模式"
 date: 2020-02-20 18:30:00 +0800
 categories: technology
 tags: shoot
-img: https://static.kiwi.cat/images/XIAOMI.jpg
+img: https://static.kiwi.cat/images/mode.jpg
 ---
 
 Auto档基本就是你按一下就完事了的档位。
