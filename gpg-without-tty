@@ -1,0 +1,3 @@
+#!/bin/bash
+echo $(secret-tool lookup gpgpassphrase GPGKEY) | /usr/bin/gpg --batch \
+           --no-tty --pinentry-mode loopback --passphrase-fd 0 "$@"
