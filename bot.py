@@ -6,3 +6,4 @@ with open("commits/logs", "a") as logs:
 
 os.system("git add .")
 os.system("git commit -m \"Commit Bot" + time.asctime() + "\"")
+os.system("git push")
