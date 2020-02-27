@@ -7,7 +7,7 @@ while True:
             logs.writelines(time.asctime() + "\n")
     
     os.system("git add .")
-    os.system("git commit -m \"Commit Bot @" + time.asctime() + "\"")
+    os.system("git commit -m \"Commit Bot At " + time.asctime() + "\"")
     os.system("git push")
 
-    time.sleep(60)
+    time.sleep(600)
