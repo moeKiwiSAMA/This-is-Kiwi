@@ -52,7 +52,7 @@ music_player:
     pic: ''
 
 head_card:
-  switch: true
+  switch: false
   left_img: "https://i.loli.net/2019/01/19/5c42f08cb37e0.png"
   left_text: ""
   right_img: "https://i.loli.net/2019/01/19/5c42f10e7b205.png"
